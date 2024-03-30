@@ -7,13 +7,11 @@ public class BinarySearch {
         do {
             int midpoint = (upperBound + lowerBound) / 2;
             int valueAtMidpoint = array[midpoint];
-            if(value < valueAtMidpoint){
+            if (value < valueAtMidpoint) {
                 upperBound = midpoint - 1;
-            }
-            else if(valueAtMidpoint > value){
+            } else if (value > valueAtMidpoint) {
                 lowerBound = midpoint + 1;
-            }
-            else if(valueAtMidpoint == value){
+            } else if (valueAtMidpoint == value) {
                 return midpoint;
             }
         } while (lowerBound <= upperBound);
