@@ -1,9 +1,9 @@
 package structures;
 
-public class LinkedList {
+public class SinglyLinkedList {
     private Node firstNode;
 
-    public LinkedList(Node firstNode) {
+    public SinglyLinkedList(Node firstNode) {
         this.firstNode = firstNode;
     }
 }
